@@ -734,6 +734,124 @@
     }
 
 /*END MOBILE PORTRAIT MEDIA QUERRY*/
+/********************* PRINT MEDIA QUERY **********/
+@media print {
+    body {
+        background: white;
+        font-size: 12pt;
+    }
+
+    .header,
+    .hr,
+    .footer,
+    .button,
+    .nav,
+    .testimonial1,
+    .testimonials1,
+    .testimonial2 {
+        display: none;
+    }
+
+    .circles {
+        display: block;
+        height: initial;
+        margin-top: initial;
+        text-align: center;
+    }
+
+    #heading2 {
+        color: initial;
+    }
+
+    .circle2 {
+        display: block;
+        height: initial;
+        width: initial;
+        padding-top: initial;
+        line-height: initial;
+        border-radius: initial;
+        background-color: initial;
+        border: initial;
+        color: initial;
+        font-size: initial;
+        margin: initial;
+        box-shadow: initial;
+    }
+
+    .sectionImage {
+        display: none;
+    }
+
+    .sectionText {
+        all:initial;
+        grid-area: none;
+        display: block;
+        font-size: initial;
+        margin-right: initial;
+    }
+
+    .elenapic {
+        display: block;
+        height: initial;
+
+        justify-content: initial;
+        align-items: initial;
+        margin-left: initial;
+        margin-right: initial;
+        float: initial;
+    }
+
+    .oldman {
+        display: none;
+    }
+
+    .greyText {
+        font-family: initial;
+        color: initial;
+        font-size: initial;
+        font-weight: initial;
+    }
+
+    .eText {
+        font-family: initial;
+        color: initial;
+        font-size: initial;
+        font-weight: initial;
+    }
+
+    .descText {
+        font-family: initial;
+        color: initial;
+        font-size: initial;
+        font-weight: initial;
+    }
+
+    .aboutme {
+        margin-top: initial;
+    }
+
+    /*End Middle Section*/
+
+    .headline {
+        display: block;
+        height: initial;
+        background-color: initial;
+        border-bottom: initial;
+        border-top: initial;
+        width: initial;
+
+    }
+
+    .headline p {
+        text-align: initial;
+        font-family: initial;
+        font-size: initial;
+        color: initial;
+        margin-top: initial;
+    }
+}
+
+/****************** ENDPRINT MEDIA QUERY *********/
 
 
 
