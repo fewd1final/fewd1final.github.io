@@ -421,23 +421,98 @@ header {
 }
 
 
+/*END MOBILE PORTRAIT MEDIA QUERRY*/
+
+        @media print {
+            body {
+                background: white;
+                font-size: 12pt;
+            }
+
+            .header,
+            .hr,
+            .footer,
+            .button,
+            .nav,
+            .headline, .button1 {
+                display: none;
+            }
+   
+
+   .mainpic {
+height: initial;
+       color: initial;
+       text-align: initial;
+       filter: initial;
+   }  
+
+   .mainpic:hover {
+display: none;
+            }
+   .mainpic h1 {
+       padding-top: initial;
+   }
+   
+   .pic1 {
+       display: block;
+       align-self: initial;
+       background: initial;
+       background-position: initial;
+       background-size: initial;
+       position: initial;
+    }
+
+   .pic2 {
+               display: block;
+       align-self: initial;
+       background: initial;
+       background-position: initial;
+       background-size: initial;
+       position: initial;
+    }
+
+   .pic3 {
+               display: block;
+       align-self: initial;
+       background: initial;
+       background-position: initial;
+       background-size: initial;
+       position: initial;
+   }
 
 
+   .pic4 {
+               display: block;
+       align-self: initial;
+       background: initial;
+       background-position: initial;
+       background-size: initial;
+       position: initial;
+    }
+
+   .pic5 {
+               display: block;
+       align-self: initial;
+       background: initial;
+       background-position: initial;
+       background-size: initial;
+       position: initial;
+   }
+
+   .contentInfo { display: none;
+
+    }
+
+    .inset {display: none;
+
+    }
 
 
-        
-        
-        
-          
-            
-            
-        
-        
-        
-            
-    
-            
-        
-        
-        
-		
+   .border {
+display: none;
+    }
+            div .mainpic img {
+                display: none;
+            }
+}
+        /****************** ENDPRINT MEDIA QUERY *********/
