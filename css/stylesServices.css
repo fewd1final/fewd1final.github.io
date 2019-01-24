@@ -420,112 +420,24 @@ header {
 
 }
 
-/*END MOBILE PORTRAIT MEDIA QUERRY*/
-
-        @media print {
-            body {
-                background: white;
-                font-size: 12pt;
-            }
-
-            .header,
-            .hr,
-            .footer,
-            .button,
-            .nav,
-            .headline, .button1 {
-                display: none;
-            }
-   }
-
-   .mainpic {
-height: initial;
-       color: initial;
-       text-align: initial;
-       filter: initial;
-   }  
-
-   .mainpic:hover {
-display: none;
-            }
-   .mainpic h1 {
-       padding-top: initial;
-   }
-   
-   .pic1 {
-       display: block;
-       align-self: initial;
-       background: initial;
-       background-position: initial;
-       background-size: initial;
-       position: initial;
-    }
-
-   .pic2 {
-               display: block;
-       align-self: initial;
-       background: initial;
-       background-position: initial;
-       background-size: initial;
-       position: initial;
-    }
-
-   .pic3 {
-               display: block;
-       align-self: initial;
-       background: initial;
-       background-position: initial;
-       background-size: initial;
-       position: initial;
-   }
 
 
-   .pic4 {
-               display: block;
-       align-self: initial;
-       background: initial;
-       background-position: initial;
-       background-size: initial;
-       position: initial;
-    }
-
-   .pic5 {
-               display: block;
-       align-self: initial;
-       background: initial;
-       background-position: initial;
-       background-size: initial;
-       position: initial;
-   }
-
-   .contentInfo { display: none;
-      /*display: block;
-       margin: 0 5em 5em 5em;
-       line-height: 1.5em;
-       border-width: .3em;
-       border-color: #009fff;
-       border-style: ridge;
-       box-shadow: 5px 10px #888888;
-       padding: 3.5em;  */ 
-    }
-
-    .inset {display: none;
-        /*margin-left: 3em;
-        border-width: .1em;
-        border-style: dotted;
-        background-color: hsla(203, 100%, 51%, 0.1);    
-        border-color: #009fff;
-        padding: .75em;*/
-    }
 
 
-   .border {
-display: none;
-    }
-            div .mainpic img {
-                display: none;
-            }
-        }
 
-        /****************** ENDPRINT MEDIA QUERY *********/
+        
+        
+        
+          
+            
+            
+        
+        
+        
+            
+    
+            
+        
+        
+        
 		
