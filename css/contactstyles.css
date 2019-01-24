@@ -1,12 +1,15 @@
 body {
     margin: 0;
-    font-family:sans-serif;
+    font-family: 'Archivo', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     width: 100%;
 }
+
 * {
     padding: 0;
     margin: 0;
 }
+
 /*Grid Styles*/
 #contactWrapper {
     display: grid;
@@ -32,6 +35,7 @@ body {
         "blueBorder blueBorder blueBorder blueBorder blueBorder blueBorder"
         "footer footer footer footer footer footer";
 }
+
 #fieldset {
     display: grid;
     grid-template-columns: (6, 1fr);
@@ -58,6 +62,7 @@ body {
     max-width: 100%;
     max-height: 100%;
 }
+
 #formGrid {
     display: grid;
     grid-template-columns: (6, 1fr);
@@ -76,51 +81,54 @@ body {
         "label9 label9 input9 input9 input9 input9"
         "submitButton . . . . .";
 }
+
 /*End Grid Styles*/
 
 /*Form Grid Area*/
 
 /*Logo*/
 
-    .logo {
-        grid-area: logo;
-        margin-top: 5px;
-        width: auto;
-        text-align: center;
-        grid-area: logo;
-        padding: 0;
-    }
+.logo {
+    grid-area: logo;
+    margin-top: 5px;
+    width: auto;
+    text-align: center;
+    grid-area: logo;
+    padding: 0;
+}
 
 /*End Logo*/
 
 /*Nav */
 
-    .nav {
-        grid-area: nav;
-        text-align: center;
+.nav {
+    grid-area: nav;
+    text-align: center;
 
-    }
+}
 
-    nav ul {
-         border-radius: .5em;
-        border: 2px solid #009fff;
-        list-style-type: none;
-        margin: 10px;
-        padding-top:0;
-        display: grid;
-        height: 50px;
-        grid-template: auto / repeat(5, 1fr);
-        grid-gap: px;
-        align-content: center;
-    }
-    nav ul li a {
-        color: black;
-        text-decoration: none;
+nav ul {
+    border-radius: .5em;
+    border: 2px solid #009fff;
+    list-style-type: none;
+    margin: 10px;
+    padding-top: 0;
+    display: grid;
+    height: 50px;
+    grid-template: auto / repeat(5, 1fr);
+    grid-gap: px;
+    align-content: center;
+}
 
-    }
-    nav a:hover{
-        color: #009fff;
-    }
+nav ul li a {
+    color: black;
+    text-decoration: none;
+
+}
+
+nav a:hover {
+    color: #009fff;
+}
 
 
 /* Buttons */
@@ -130,12 +138,14 @@ body {
     margin-top: -25px;
     margin-right: 20px;
 }
+
 .navbuttons {
     margin-top: 10px;
     display: grid;
     height: auto;
     grid-template: auto / repeat(2, 1fr);
 }
+
 #button {
     background-color: #009fff;
     color: #ffffff;
@@ -144,16 +154,20 @@ body {
     padding: .5em;
     font-size: 1.1em;
 }
+
 #button a {
     text-decoration: none;
 }
+
 #button1 a {
     text-decoration: none;
 }
+
 #button1,
 #button {
     width: 100px;
 }
+
 input[type="button"],
 #button1 {
     background-color: #ffffff;
@@ -164,11 +178,13 @@ input[type="button"],
     font-size: 1.1em;
     margin-bottom: ;
 }
+
 input[type="button"]:hover {
     border-color: #0AB1D0;
     border-width: thin;
     box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.2);
 }
+
 /* End Buttons */
 header {
     grid-area: header;
@@ -178,10 +194,32 @@ header {
     text-align: center;
     margin-bottom: 3em;
 }
+
 h1#contactMe {
     font-family: "Open Sans";
     font-size: 4.3em;
     color: white;
+}
+h2, h3, #note,
+.label1,
+.label2,
+.label3,
+.label4,
+.label5,
+.label6,
+.label7,
+.label8,
+.label9,
+.submitButton, #FAQ > div > p:nth-child(3),
+#FAQ > div > p:nth-child(7),
+#FAQ > div > p:nth-child(11),
+#FAQ > div > p:nth-child(15),
+#FAQ > div > p:nth-child(19),
+#FAQ > div > p:nth-child(23),
+#FAQ > div > p:nth-child(27),
+#FAQ > div > p:nth-child(23),
+#FAQ > div > p:nth-child(35) {
+    font-family: "Archivo";
 }
 form {
     grid-area: form;
@@ -192,14 +230,17 @@ form {
     height: 26.56rem;
     margin-bottom: 4.5em;
 }
+
 #test {
     grid-area: test;
 }
+
 #contactInfo {
     grid-area: contactInfo;
     width: 420px;
     height: 270px;
 }
+
 /*FAQ Styles*/
 #FAQ {
     grid-area: FAQ;
@@ -209,25 +250,30 @@ form {
     font-size: 1.3em;
     line-height: 1.5em;
 }
+
 h3 {
     text-align: center;
     font-size: 1.5em;
 }
+
 h4 {
     font-size: 1.4em;
 }
+
 /*End FAQ Styles*/
 .blueborder {
     grid-area: blueBorder;
     background-color: #009fff;
     height: 4em;
 }
+
 /*Footer Begin*/
 .footer {
     grid-area: footer;
     height: 8em;
     background-color: black;
 }
+
 .footer p {
     color: white;
     text-align: center;
@@ -236,16 +282,19 @@ h4 {
     margin: 25px 0 0 0;
     margin-right: 18px;
 }
+
 /*Sprites*/
 .social-media {
     margin: 0 auto;
     width: 250px;
 }
+
 .social-media div {
     float: left;
     margin-left: 5px;
     margin-right: 1px;
 }
+
 .social-media a {
     display: block;
     width: 50px;
@@ -268,6 +317,7 @@ h4 {
 .social-media div.four {
     background: url('../images/socialmediaiconscropped.png')-148px 0;
 }
+
 /*End Footer*/
 
 /*Beginning Form Grid Areas*/
@@ -277,80 +327,104 @@ h4 {
     margin-top: .5em;
     font-size: 1.2em;
 }
+
 .label1 {
     grid-area: label1;
 }
+
 .input1 {
     grid-area: input1;
 }
+
 .label2 {
     grid-area: label2;
 }
+
 .input2 {
     grid-area: input2;
 }
+
 .label3 {
     grid-area: label3;
 }
+
 .input3 {
     grid-area: input3;
 }
+
 .label4 {
     grid-area: label4;
 }
+
 .input4 {
     grid-area: input4;
 }
+
 .label5 {
     grid-area: label5;
 }
+
 .input5 {
     grid-area: input5;
 }
+
 .label6 {
     grid-area: label6;
 }
+
 .input6 {
     grid-area: input6;
 }
+
 .label7 {
     grid-area: label7;
 }
+
 .input7 {
     grid-area: input7;
 }
+
 .label8 {
     grid-area: label8;
 }
+
 .input8 {
     grid-area: input8;
 }
+
 .label9 {
     grid-area: label9;
 }
+
 .input9 {
     grid-area: input9;
 }
+
 .submitButton {
     grid-area: submitButton;
 }
+
 /*End Form Grid Area*/
 
 /******Begin My Schedule, Contact, and Google Map Styles*******/
 h2 {
     text-align: center;
 }
+
 .big-container {
     margin-bottom: 1.3em;
 }
+
 /* Google Maps Styles */
 #imageMap {
     grid-area: imageMap;
 }
+
 .mapouter {
     height: 100%;
     width: 100%;
 }
+
 .gmap_canvas {
     overflow: hidden;
     background: none !important;
@@ -358,6 +432,7 @@ h2 {
     width: 100%;
     margin-top: 4em;
 }
+
 /*End My Schedule, Contact, and Google Map Styles*/
 /***************************************************/
 
@@ -377,11 +452,13 @@ select {
     box-sizing: border-box;
     margin-bottom: 1em;
 }
+
 textarea {
     min-height: 4em;
     padding-top: .4em;
     padding-bottom: .4em;
 }
+
 .label1 > label,
 .label2 > label,
 .label3 > label,
@@ -396,38 +473,47 @@ textarea {
     height: 2em;
     font-weight: 600;
 }
+
 input[type="checkbox"],
 input[type="radio"] {
     display: inline;
     margin: .5em;
 }
+
 input:required {
     border: 1px solid #0AB1D0;
 }
+
 input[type="text"]:valid,
 input[type="tel"]:valid,
 input[type="email"]:valid {
     border-color: rgb(0, 128, 0);
 }
+
 input.error {
     border-color: red;
 }
+
 input::placeholder {
     color: lightgray;
     font-size: 1.2em;
     font-style: italic;
 }
+
 #customFitnessPackages {
     margin-bottom: 2em;
 }
+
 #questions {
     font-family: "Open Sans";
     font-size: 2em;
 }
+
 #advanced {
     margin-bottom: 1.3em;
 
 }
+
 /*End General Questions Form Styles*/
 
 /*FAQ Styles*/
@@ -439,6 +525,7 @@ h3 {
 h4 {
     font-size: 1.3em
 }
+
 /*Modal Pop Styles*/
 .modal {
     position: fixed;
@@ -452,6 +539,7 @@ h4 {
     transform: scale(1.1);
     transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
 }
+
 .modal-content {
     position: absolute;
     top: 50%;
@@ -463,29 +551,34 @@ h4 {
     border-radius: 0.5rem;
 
 }
+
 .close-button {
-    /*float: right;*/
-    width: 3rem;
-    line-height: 2rem;
+    float: right;
+    width: 1rem;
+    line-height: 1rem;
     text-align: center;
     cursor: pointer;
     border-radius: 0.25rem;
     background-color: lightgray;
 }
+
 .close-button:hover {
     background-color: darkgray;
 }
+
 .show-modal {
     opacity: 1;
     visibility: visible;
     transform: scale(1.0);
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
-.trigger {
-}
+
+.trigger {}
+
 .trigger:hover {
     box-shadow: 0 5px 50px 0 rgba(0, 0, 0, 0.7);
 }
+
 .trigger,
 .trigger:hover {
     margin-left: 3.3em;
@@ -495,14 +588,16 @@ h4 {
     border-width: thick;
     font-size: 1.6em;
 }
+
 hr {
     margin: .5em 0;
 }
+
 /*End Modal Pop Styles*/
 
 /****************************************************************
 /****************************************************************
-/* Mobile Portrait Media Query*/
+/* MEDIA QUERIES */
 /* MEDIA QUERIES */
 
 @media screen and (Max-width: 959px) {}
@@ -791,7 +886,7 @@ hr {
     #test > button {
         width: 13em;
         margin-bottom: 2em;
-        margin-left: 2.3em;
+        margin-left: 1.5em;
     }
     h1#contactMe {
         font-size: 2em;
@@ -809,6 +904,557 @@ hr {
     height: 0;
     overflow: hidden;
 }
+.responsive-iframe-container iframe,
+.vresponsive-iframe-container object,
+.vresponsive-iframe-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*OLD MQ*/
+
+/*@media screen and (Max-width: 959px) {}*/
+
+
+
+/*TABLET PORTRAIT MEDIA QUERY*/
+
+/*@media screen and (min-width:768px) and (max-width:959px)
+{
+
+    #contactWrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "logo logo logo logo buttons buttons"
+            "nav nav nav nav nav nav"
+            "header header header header header header"
+            "form form form" 
+            "form form form" 
+            "form form form"
+            "form form form" 
+            "form form form"
+            "form form form"
+            "form form form"
+            "form form form"
+            "form form form"
+            "form form form"
+            "form form form"
+            "form form form"
+            "form form form"
+            "mySchedule mySchedule"
+            "mySchedule mySchedule"
+            "mySchedule mySchedule"
+            "test test test"
+            "contactInfo contactInfo contactInfo"
+            "contactInfo contactInfo contactInfo"
+            "contactInfo contactInfo contactInfo"
+            "FAQ FAQ FAQ"
+            "blueBorder blueBorder blueBorder"
+            "footer footer footer";
+    }
+
+#fieldset {
+        display: grid;
+        grid-template-columns: (3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "fieldset fieldset fieldset"
+            "fieldset fieldset fieldset"
+            "fieldset fieldset fieldset"
+            "fieldset fieldset fieldset"
+            "fieldset fieldset fieldset"
+            "fieldset fieldset fieldset"
+            "fieldset fieldset fieldset"
+            "fieldset fieldset fieldset"
+            "fieldset fieldset fieldset"
+            "fieldset fieldset fieldset";
+        grid-area: fieldset
+    }
+
+#formGrid {
+        display: grid;
+        grid-template-columns: (3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "note note note"
+            ". . ."
+            "label1 input1 input1"
+            "label2 input2 input2"
+            "label3 input3 input3"
+            "label4 input4 input4"
+            "label5 input5 input5"
+            "label6 input6 input6"
+            "label7 input7 input7"
+            "label8 input8 input8"
+            "label9 input9 input9"
+            "submitButton . . . . ."; 
+    }
+.button{
+        display: none;
+    }
+}
+
+/*END TABLET PORTRAIT MEDIA QUERY*/
+
+/*@media screen and (min-width:576px) and (max-width:767px){
+    #contactWrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "logo logo logo"
+            "nav nav nav"
+            "header header header"
+            "form form form"
+            "form form form"
+            "form form form"
+            "form form form"
+            "form form form"
+            "form form form"
+            "form form form"
+            "form form form"
+            "form form form"
+            "form form form"
+            "form form form"
+            "form form form"
+            "form form form"
+            "mySchedule mySchedule mySchedule"
+            "mySchedule mySchedule mySchedule"
+            "mySchedule mySchedule mySchedule"
+            "mySchedule mySchedule mySchedule"
+            "test test test"
+            "contactInfo contactInfo contactInfo"
+            "contactInfo contactInfo contactInfo"
+            "contactInfo contactInfo contactInfo"
+            "contactInfo contactInfo contactInfo"
+            "blueBorder blueBorder blueBorder"
+            "footer footer footer";
+    }
+    #fieldset {
+        display: grid;
+        grid-template-columns: (3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "fieldset fieldset fieldset"
+            "fieldset fieldset fieldset"
+            "fieldset fieldset fieldset"
+            "fieldset fieldset fieldset"
+            "fieldset fieldset fieldset"
+            "fieldset fieldset fieldset"
+            "fieldset fieldset fieldset"
+            "fieldset fieldset fieldset"
+            "fieldset fieldset fieldset"
+            "fieldset fieldset fieldset";
+        margin: 0;
+    }
+    #formGrid {
+        display: grid;
+        grid-template-columns: (3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "note note note"
+            ". . ."
+            "label1 . ."
+            ". input1 input1 "
+            "label2 . ."
+            ". input2 input2"
+            "label3 . ."
+            ". input3 input3"
+            "label4 . ."
+            ". input4 input4"
+            "label5 . ."
+            ". input5 input5"
+            "label6 . ."
+            ". input6 input6"
+            "label7 . ."
+            ". input7 input7"
+            "label8 . ."
+            ". input8 input8"
+            "label9 . ."
+            ". input9 input9"
+            "submitButton submitButton submitButton";
+    }
+    .button,
+    #FAQ {
+        display: none;
+    }
+    form {
+        margin: 0 .7em 3em .7em;
+    }
+    #contactInfo,
+    section#myschedule,
+    .gmap_canvas,
+    button#trigger,
+    .trigger:hover,
+    #test {
+        margin: auto;
+    }
+    #test {
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+    .trigger {
+        margin-left: 0;
+    }
+    /*.gmap_canvas*/
+/*#contactInfo {
+        margin-bottom: 3em;
+    }
+}
+    
+}*/
+
+    
+
+
+/*@media screen and (min-width:480px) and (max-width: 767px) {
+    #contactWrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "logo logo"
+            "nav nav"
+            "header header"
+            "form form"
+            "form form"
+            "form form"
+            "form form"
+            "form form"
+            "form form"
+            "form form"
+            "form form"
+            "form form"
+            "form form"
+            "form form"
+            "form form"
+            "form form"
+            "mySchedule mySchedule"
+            "mySchedule mySchedule"
+            "mySchedule mySchedule"
+            "mySchedule mySchedule"
+            "test test"
+            "contactInfo contactInfo"
+            "contactInfo contactInfo"
+            "contactInfo contactInfo"
+            "contactInfo contactInfo"
+            "blueBorder blueBorder"
+            "footer footer";
+    }
+    #fieldset {
+        display: grid;
+        grid-template-columns: (2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "fieldset fieldset"
+            "fieldset fieldset"
+            "fieldset fieldset"
+            "fieldset fieldset"
+            "fieldset fieldset"
+            "fieldset fieldset"
+            "fieldset fieldset"
+            "fieldset fieldset"
+            "fieldset fieldset"
+            "fieldset fieldset";
+        margin: 0;
+    }
+    #formGrid {
+        display: grid;
+        grid-template-columns: (2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "note note"
+            ". ."
+            "label1 label1"
+            "input1 input1"
+            "label2 label2"
+            "input2 input2"
+            "label3 label3"
+            "input3 input3"
+            "label4 label4"
+            "input4 input4"
+            "label5 label5"
+            "input5 input5"
+            "label6 label6"
+            "input6 input6"
+            "label7 label7"
+            "input7 input7"
+            "label8 label8"
+            "input8 input8"
+            "label9 label9"
+            "input9 input9"
+            "submitButton submitButton";
+    }
+    .button,
+    #FAQ {
+        display: none;
+    }
+    form {
+        margin: 0 .7em 3em .7em;
+    }
+    #contactInfo,
+    section#myschedule,
+    .gmap_canvas,
+    button#trigger,
+    .trigger:hover,
+    #test {
+        margin: auto;
+    }
+    #test {
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+    .trigger {
+        margin-left: 0;*/
+    }
+    /*.gmap_canvas*/
+/*#contactInfo {
+        margin-bottom: 3em;
+    }
+}
+
+@media screen and (min-width:433px) and (max-width:479px){
+    #contactWrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "logo logo"
+            "nav nav"
+            "header header"
+            "form form"
+            "form form"
+            "form form"
+            "form form"
+            "form form"
+            "form form"
+            "form form"
+            "form form"
+            "form form"
+            "form form"
+            "form form"
+            "form form"
+            "form form"
+            "mySchedule mySchedule"
+            "mySchedule mySchedule"
+            "mySchedule mySchedule"
+            "mySchedule mySchedule"
+            "test test"
+            "contactInfo contactInfo"
+            "contactInfo contactInfo"
+            "contactInfo contactInfo"
+            "contactInfo contactInfo"
+            "blueBorder blueBorder"
+            "footer footer";
+    }
+    #fieldset {
+        display: grid;
+        grid-template-columns: (2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "fieldset fieldset"
+            "fieldset fieldset"
+            "fieldset fieldset"
+            "fieldset fieldset"
+            "fieldset fieldset"
+            "fieldset fieldset"
+            "fieldset fieldset"
+            "fieldset fieldset"
+            "fieldset fieldset"
+            "fieldset fieldset";
+        margin: 0;
+    }
+    #formGrid {
+        display: grid;
+        grid-template-columns: (2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "note note"
+            ". ."
+            "label1 label1"
+            "input1 input1"
+            "label2 label2"
+            "input2 input2"
+            "label3 label3"
+            "input3 input3"
+            "label4 label4"
+            "input4 input4"
+            "label5 label5"
+            "input5 input5"
+            "label6 label6"
+            "input6 input6"
+            "label7 label7"
+            "input7 input7"
+            "label8 label8"
+            "input8 input8"
+            "label9 label9"
+            "input9 input9"
+            "submitButton submitButton";
+    }
+    .button,
+    #FAQ {
+        display: none;
+    }
+    form {
+        margin: 0 .7em 3em .7em;
+    }
+    #contactInfo,
+    section#myschedule,
+    .gmap_canvas,
+    button#trigger,
+    .trigger:hover,
+    #test {
+        margin: auto;
+    }
+    #test {
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+    .trigger {
+        margin-left: 0;
+}*.
+
+/*.gmap_canvas*/
+/*#contactInfo {
+        margin-bottom: 3em;
+    }
+}*/
+
+
+/*END MOBILE LANDSCAPING MEDIA QUERY*/
+
+
+/*MOBILE PORTRAIT MEDIA QUERRY*/
+
+/*@media screen and (max-width:479px) {
+    #contactWrapper {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "logo"
+            "nav"
+            "header"
+            "form"
+            "form"
+            "form"
+            "form"
+            "form"
+            "form"
+            "form"
+            "form"
+            "form"
+            "form"
+            "form"
+            "form"
+            "form"
+            "test"
+            "blueBorder"
+            "footer";
+        margin: auto;
+    }
+
+    #fieldset {
+        display: grid;
+        grid-template-columns: (1, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "fieldset"
+            "fieldset"
+            "fieldset"
+            "fieldset"
+            "fieldset"
+            "fieldset"
+            "fieldset"
+            "fieldset"
+            "fieldset"
+            "fieldset";
+        margin: 0;
+    }
+
+    #formGrid {
+        display: grid;
+        grid-template-columns: (1, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "note"
+            "."
+            "label1"
+            "input1"
+            "label2"
+            "input2"
+            "label3"
+            "input3"
+            "label4"
+            "input4"
+            "label5"
+            "input5"
+            "label6"
+            "input6"
+            "label7"
+            "input7"
+            "label8"
+            "input8"
+            "label9"
+            "input9"
+            "submitButton";
+    }
+
+    #myschedule {
+        width: 26rem;
+        height: 26.56rem;
+    }
+
+    form {
+        margin: 0 .4em 2em .4em;
+    }
+
+    .button,
+    .navbuttons,
+    #contactInfo,
+    section#myschedule,
+    .mapouter,
+    .mapouter,
+    .gmap_canvas,
+    #FAQ,
+    .small-container,
+    .big-container {
+        display: none;
+    }
+
+    form {
+        margin-bottom: 0 2em 4em 2em;
+    }
+
+    #test > button {
+        width: 13em;
+        margin-bottom: 2em;
+        margin-left: 1.5em;
+    }
+
+    h1#contactMe {
+        font-size: 2em;
+        padding: 0;
+    }
+}*/
+
+/*END MOBILE PORTRAIT MEDIA QUERRY*/
+
+/*Responsive iframe-container*/
+
+.responsive-iframe-container {
+    position: relative;
+    padding-bottom: 75% !important;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
 .responsive-iframe-container iframe,
 .vresponsive-iframe-container object,
 .vresponsive-iframe-container embed {
