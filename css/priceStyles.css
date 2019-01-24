@@ -557,4 +557,134 @@ header {
      }
  }
  /*******************************************************/
- 
+ /********************* PRINT MEDIA QUERY **********/
+ @media print {
+     body {
+         background: white;
+         font-size: 12pt;
+     }
+
+     .header,
+     .footer,
+     .button,
+     .nav,
+     .breaker,
+     #startnowbutton,
+     .borderSpace {
+         display: none;
+     }
+ .logo {
+     display: block;
+     height: initial;
+     z-index: initial;
+     padding-left: initial;
+ }
+     .circles {
+         display: block;
+         height: initial;
+         margin-top: initial;
+         text-align: center;
+     }
+
+     #heading2 {
+         color: initial;
+     }
+
+     .circle2 {
+         display: block;
+         height: initial;
+         width: initial;
+         padding-top: initial;
+         line-height: initial;
+         border-radius: initial;
+         background-color: initial;
+         border: initial;
+         color: initial;
+         font-size: initial;
+         margin: initial;
+         box-shadow: initial;
+     }
+
+     .cardcon {
+         display: block;
+         height: initial;
+         max-width: initial;
+         margin: initial;
+         text-align: initial;
+         background-color: initial;
+     }
+
+     .card {
+         display: block;
+         box-shadow: initial;
+         width: initial;
+         max-height: initial;
+         border-style: initial;
+         border-width: initial;
+         border-radius: initial;
+         border-color: initial;
+         background-color: initial;
+         margin-right: initial;
+
+     }
+
+     .circle3 {
+         display: block;
+         height: initial;
+         width: initial;
+         border-radius: initial;
+         background-color: initial;
+         font-size: initial;
+         box-shadow: initial;
+     }
+
+     .circle3 p {
+         color: initial;
+         line-height: initial;
+         padding: initial;
+         text-align: initial;
+         margin-top: initial;
+         font-weight: initial;
+         font-size: initial;
+     }
+
+     .cardContainer {
+         padding: initial;
+         text-align: initial;
+     }
+
+     .card:hover {
+         display: none;
+     }
+
+
+     #startnowbutton:hover {
+         transform: initial;
+         box-shadow: initial;
+     }
+
+     #startnowbutton a {
+         text-decoration: initial;
+         color: initial;
+         font-weight: initial;
+     }
+
+     .detailContainer {
+         display: block;
+         background-color: initial;
+         width: initial;
+         height: initial;
+     }
+
+     #detailText {
+         margin-left: initial;
+         margin-right: initial;
+         color: initial;
+         font-size: initial;
+         font: initial;
+     }
+
+
+ }
+
+ /****************** ENDPRINT MEDIA QUERY *********/
