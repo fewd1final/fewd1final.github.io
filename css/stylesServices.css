@@ -513,9 +513,15 @@ display: none;
         font-size: initial,*/
     }
 
-    .inset {display: none;
-
-    }
+.inset {
+    display: block;
+    margin-left: initial;
+    border-width: initial;
+    border-style: initial;
+    background-color: initial;
+    border-color: initial;
+    padding: initial;
+}
 
 
    .border {
