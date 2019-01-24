@@ -623,6 +623,15 @@
         nav {
             margin: 10px;
         }
+            
+        .dropdown-content {
+             width: 18%;
+        }
+        .dropdown-content a {
+             font-size: .6em; 
+             padding: 6px;
+             text-align:center;
+            }
 
         .header {
         background-size: 100%;
