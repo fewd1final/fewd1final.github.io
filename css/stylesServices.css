@@ -499,8 +499,18 @@ display: none;
        position: initial;
    }
 
-   .contentInfo { display: none;
-
+    .contentInfo{
+           display:block;
+    margin: initial;
+    line-height: initial;
+    border-width: initial;
+    border-color: initial;
+    border-style: initial;
+    box-shadow: initial;
+    padding: initial;
+        /*margin-top: initial;
+        padding: initial;
+        font-size: initial,*/
     }
 
     .inset {display: none;
