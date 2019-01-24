@@ -648,7 +648,7 @@
         text-align: center;
         margin-top: 8%;
         border: none solid white;
-        font-size: 2.8em;
+        font-size: 2em;
         color: white;
         text-shadow: 5px 5px black;
         margin-bottom: 0px;
@@ -661,8 +661,8 @@
         .circles {
         margin-left: 0px;
         grid-area: circles;
-        height: 6em;
-        margin-top: -12px;
+        height: 9em;
+        margin-top: -2em;
         text-align: center;
 
 
