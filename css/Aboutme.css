@@ -406,4 +406,59 @@ nav a:hover{
 
 }
 /*END MOBILE PORTRAIT MEDIA QUERRY*/
+/********************* PRINT MEDIA QUERY **********/
+        @media print {
+            body {
+                background: white;
+                font-size: 12pt;
+            }
+
+            .header,
+            .hr,
+            .footer,
+            .button,
+            .nav,
+            .testimonial1,
+            .testimonials1,
+            .testimonial2,
+            .row1main,
+            .headline {
+                display: none;
+            }
+
+            .circles {
+                display: block;
+                height: initial;
+                margin-top: initial;
+                text-align: center;
+            }
+
+            #heading2 {
+                color: initial;
+            }
+
+            .row2main img {
+                display: none;
+            }
+
+            .row2main {
+                display: block;
+                margin-top: initial;
+                margin-bottom: initial;
+                font-size: initial;
+                border-radius: initial;
+                background-color: initial;
+                border: initial;
+                text-align: initial;
+                max-width: initial;
+                padding: initial;
+            }
+
+            .row1main img {
+                display: none;
+            }
+
+        }
+
+        /****************** ENDPRINT MEDIA QUERY *********/
 
