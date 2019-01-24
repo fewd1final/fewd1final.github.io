@@ -498,6 +498,11 @@ header {
      .header {
          height: 10rem;
      }
+ 
+ .elenapic {
+    margin-bottom: 3.2rem;
+    width: 100%;
+}
 
      .circles {
          display: none;
